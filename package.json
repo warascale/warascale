@@ -1,5 +1,5 @@
 {
-  "name": "waraspace",
+  "name": "WaraScale",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/arayhan_/waraspace.git"
+    "url": "git+https://gitlab.com/arayhan_/WaraScale.git"
   },
-  "author": "WaraSpace\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D Space\u001b[D\u001b[D\u001b[D\u001b[D\u001b[\u001b[\u001b[C\u001b[C\u001b[C\u001b[C\u001b[Space",
+  "author": "WaraScale\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D Space\u001b[D\u001b[D\u001b[D\u001b[D\u001b[\u001b[\u001b[C\u001b[C\u001b[C\u001b[C\u001b[Space",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/arayhan_/waraspace/issues"
+    "url": "https://gitlab.com/arayhan_/WaraScale/issues"
   },
-  "homepage": "https://gitlab.com/arayhan_/waraspace#README",
+  "homepage": "https://gitlab.com/arayhan_/WaraScale#README",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.5",

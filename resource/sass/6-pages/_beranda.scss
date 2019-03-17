@@ -24,13 +24,13 @@ section {
         }
         
         .category__left, .about__left { 
-            width: 50%; 
+            width: 55%; 
             @include breakpoint(md) { 
                 width: 100%;
             }
         }
         .category__right, .about__right { 
-            width: 50%; 
+            width: 45%; 
             @include breakpoint(md) { 
                 width: 100%;
             }
@@ -69,6 +69,8 @@ section {
                         font-family: $font-1; 
                         margin-top: 10px;
                         color: #333;
+                        font-size: 2em;
+                        margin-left: 20px;
                         @extend .text-weight-700;
                     }
 
@@ -82,7 +84,7 @@ section {
     }
 
     &#about {
-        padding: 60px 0;
+        padding: 110px 0;
 
         .about__background { 
             transform: rotateZ(180deg) rotateY(180deg) skew(-20deg) translateX(-25%); 
