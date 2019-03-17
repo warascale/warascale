@@ -1,0 +1,61 @@
+main#wara-fordic-discussion {
+    background: #eee;
+    section{
+        &#wara-fordic-dis{
+            padding-top: 30px;
+            padding-bottom: 30px;
+
+            .wara-fordic-dis-list{
+                padding-top: 20px;
+                background: #fff;
+                border-radius: 5px;
+                flex: 1;
+                box-shadow: 0 0 25px transparentize($color: #333, $amount: 0.8);
+
+                .wara-fordic-dis-item{
+
+                    border-bottom: 1px solid #eee;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    .wara-fordic-dis-item-left{
+                        img{
+                            width: 100px;
+                            border-radius: 100%;
+                        }
+                        input{
+                            margin-top: 10px;
+                            padding: 10px;
+                        }
+                    }
+
+                    .wara-fordic-dis-item-right{
+                        h4{
+                            padding-bottom: 5px;
+                        }
+                        span{
+                            color: rgb(190, 190, 190);
+                        }
+                        img{
+                            width: 30%;
+                            padding-top: 20px;
+                        }
+                        .isi{
+                            font-weight: normal;
+                            padding-top: 20px;
+                        }
+                        textarea{
+                            margin-top: 10px;
+                            padding: 10px;
+                            width: 100%;
+                        }
+                        button{
+                            margin-top: 10px;
+                            margin-left: auto;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.wara-container { 
+    padding-left: $wara-container; 
+    padding-right: $wara-container; 
+    
+    @include breakpoint(md) {
+        padding-left: $wara-container-md; 
+        padding-right: $wara-container-md; 
+    }
+    @include breakpoint(sm) {
+        padding-left: $wara-container-sm; 
+        padding-right: $wara-container-sm; 
+    }
+}
+
+.wara-container-md {
+    @include breakpoint(md) {
+        padding-left: $wara-container-md; 
+        padding-right: $wara-container-md; 
+    }
+}
+
+.wara-container-sm {
+    @include breakpoint(sm) {
+        padding-left: $wara-container-sm; 
+        padding-right: $wara-container-sm; 
+    }
+}
+
+.wara-container-left { 
+    padding-left: $wara-container;
+
+    @include breakpoint(md) { padding-left: $wara-container-md; }
+    @include breakpoint(sm) { padding-left: $wara-container-sm; }
+}
+.wara-container-right { 
+    padding-right: $wara-container;
+    
+    @include breakpoint(md) { padding-right: $wara-container-md; }
+    @include breakpoint(sm) { padding-right: $wara-container-sm; }
+}
+   
+.wara-vertical-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.self-center-x {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}

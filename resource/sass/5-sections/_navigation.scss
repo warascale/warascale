@@ -1,0 +1,147 @@
+nav {
+    &#main-navigation {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 12;
+        padding-top: 10px;
+
+        @include breakpoint(sm) { padding-top: 20px; }
+
+        .mainnav__logo {
+            a {
+                img {
+                    width: 170px;
+
+                    @include breakpoint(sm) { width: 150px; }
+                    @include breakpoint(xs) { width: 120px; }
+                }
+            }
+        }
+
+        .mainnav__toggle {
+            a {
+                padding-left: 30px;
+                padding-right: 30px;
+                font-size: 1.05em;
+
+                @include breakpoint(sm) { font-size: 1em; padding-left: 25px; padding-right: 25px; }
+
+                .btn-icon-right {
+                    margin-left: 15px;
+                    font-size: 1.1em;
+
+                    @include breakpoint(sm) { font-size: 1em; }
+                }
+            }
+        }
+    }
+
+    &#nav-toggle {
+        $nav-toggle-transition: 500ms;
+
+        position: fixed;
+        right: 0;
+        top:0;
+        z-index: 14;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        transition: all $nav-toggle-transition ease;
+        visibility: hidden;
+
+        .dark-background {
+            background: transparentize(#000, 0.5);
+            width: 100%;
+            height: 100vh;
+            visibility: hidden;
+            opacity: 0;
+            transition: all $nav-toggle-transition ease;
+        }
+
+        .navtoggle__wrapper {
+            @include size(300px, 100%);
+            background: white;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translateX(100%);
+            transition: all $nav-toggle-transition ease;
+            overflow-y: scroll;
+            padding-bottom: 120px;
+            
+            @include breakpoint(sm) { width: 250px; }
+
+            .navtoggle__header {
+                position: relative;
+
+                .navtoggle__header-bg {
+                }
+                .navtoggle__header-logo {
+                    width: 200px;
+                    position: absolute;
+                    top: 40%;
+                    left: 50%;
+                    transform: translateX(-50%) translateY(-50%);
+
+                    @include breakpoint(sm) { width: 170px; }
+                }
+            }
+
+            .navtoggle__menus {
+                ul {
+                    padding: 0;
+
+                    li {
+                        list-style: none;
+
+                        a {
+                            color: $color-gray-darken-3;
+                            text-align: right;
+                            padding: 15px 20px;
+                            display: block;
+                            border-bottom: 1px solid #eee;
+                            transition: all 200ms ease;
+                            position: relative;
+
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                right: 0;
+                                bottom: 0;
+                                height: 100%;
+                                width: 0;
+                                background: $color-secondary;
+                                transition: all 200ms ease;
+                            }
+
+                            &:hover {
+                                padding-right: 25px;
+                                color: darken($color-gray-darken-3, 10%);
+                                @extend .text-weight-600;
+
+                                &:before {
+                                    width: 5px;
+                                }
+                            }
+                        }
+                        &:first-child { a { border-top: 1px solid #eee; } }
+                    }
+                }
+            }
+        }
+
+        &.active {
+            visibility: visible;
+
+            .dark-background {
+                visibility: visible;
+                opacity: 1;
+            }
+
+            .navtoggle__wrapper {
+                transform: translateX(0%);
+            }
+        }
+    }
+}

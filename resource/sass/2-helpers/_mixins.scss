@@ -1,0 +1,44 @@
+@mixin breakpoint($point) {
+    @if $point == xs {
+        @media (max-width: 576px) { @content; }
+    }
+
+    @else if $point == sm {
+        @media (max-width: 768px) { @content; }
+    }
+
+    @else if $point == md {
+        @media (max-width: 992px) { @content; }
+    }
+
+    @else if $point == lg {
+        @media (max-width: 1200px) { @content; }
+    }
+
+    @else {
+      @warn "Breakpoint mixin supports: xs, sm, md, lg";
+    }
+}
+
+@mixin breakpoint-height($point) {
+    @media (max-height: $point) { @content; }
+}
+
+@mixin d-flex($direction, $ai, $jc) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $ai;
+    justify-content: $jc;
+}
+
+@mixin absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+@mixin befter {
+    content: "";
+    position: absolute;
+}

@@ -1,0 +1,64 @@
+aside {
+    background: white;
+    border-radius: 5px;
+    display: inline-block;
+
+    .sidebar__session-wrapper {
+        $padding-session-sidebar: 25px;
+        color: #333;
+        margin: 25px 0;
+        padding: 0;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #eee;
+        padding-right: $padding-session-sidebar;
+
+        &:last-child { border-bottom: 0; }
+
+        .sidebar__title {
+            @extend .text-weight-700;
+            font-family: $font-1;
+            font-size: 1.15em;
+            display: block;
+            position: relative;
+            padding-left: $padding-session-sidebar;
+
+            &:before {
+                @include befter;
+                bottom: -12px;
+                left: $padding-session-sidebar;
+                width: 30%;
+                height: 2.5px;
+                background: #333;
+            }
+        }
+
+        ul {
+            padding: 0;
+            margin-top: 24px;
+
+            li {
+                list-style: none;
+                
+                a {
+                    width: 100%;
+                    color: darken($color-primary, 30%);
+                    padding: 5px 0;
+                    display: block;
+                    padding-left: $padding-session-sidebar;
+
+                    &:before {
+                        @include befter;
+                        @include size(0px, 100%);
+                        left: 0;
+                        bottom: 0;
+                        background: #ccc;
+                    }
+
+                    &:hover {
+                        &:before { width:2px; }
+                    }
+                }
+            }
+        }
+    }
+}

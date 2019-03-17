@@ -1,0 +1,45 @@
+main#wara-friends-ditemukan {
+    background: #eee;
+    padding-top: 20px;
+
+    section{
+        &#wara-friends-ditemukan-sel{
+            center{
+                h4{
+                    color: rgb(190, 190, 190);
+                    font-weight: normal;
+                }
+            }
+            .wara-friends-ditemukan-item{
+                padding-top: 20px;
+                padding-bottom: 20px;
+                margin-top: 20px;
+                background: #fff;
+                border-radius: 5px;
+                flex: 1;
+                box-shadow: 0 0 25px transparentize($color: #333, $amount: 0.8);
+
+                img{
+                    width: 50%;
+                    border-radius: 100%;
+                }
+                .rate{
+                    width: 40%;
+                    border-radius: 0;
+                }
+                .qoutes{
+                    color: #000;
+                    font-weight: normal;
+                    padding-bottom: 10px;
+                }
+            }
+            button{
+                margin-top: 20px;
+                margin-bottom: 20px;
+                a{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+main#wara-friends {
+    background: #eee;
+    padding-top: 20px;
+    padding-bottom: 275px;
+    section{
+        &#wara-friends-opsi{
+            select{
+                padding: 10px;
+                width: 100%;
+                margin-top: 15px;
+                border-color: none;
+                background: #fff;
+            }
+            button{
+                margin-top: 10px;
+                margin-left: auto;
+                display: block;
+
+                a{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
